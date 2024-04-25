@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Cartas Yu-Gi-Oh</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Lista de Cartas Yu-Gi-Oh</h1>
+    <section class="container__pesquisa">
+        <div class="container__pesquisa-nome">
+            <input type="text" id="searchInput" placeholder="Pesquisar cartas...">
+            <button id="searchButton">Pesquisar</button>
+        </div>
+        <div class="container__pesquisa-atributo">
+            <select id="attributeFilter">
+                <option value="">Selecione um atributo</option>
+                <option value="earth">Terra</option>
+                <option value="water">Água</option>
+                <option value="fire">Fogo</option>
+                <option value="wind">Vento</option>
+                <option value="light">Luz</option>
+                <option value="dark">Trevas</option>
+                <option value="divine">Divino</option>
+            </select>
+            <button id="filterByAttribute">Filtrar por Atributo</button>
+        </div>
+        <div class="container__pesquisa-nivel">
+            <select id="levelFilter">
+                <option value="">Selecione um Nível</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+            <button id="filterByLevel">Filtrar por Nível</button>
+
+        </div>
+    </section>
+    <section class="container__cards">
+        <div class="cards-view" id="cardList"></div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
