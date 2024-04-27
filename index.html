@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Cartas Yu-Gi-Oh</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Lista de Cartas Yu-Gi-Oh</h1>
@@ -14,7 +15,7 @@
             <button class="button-search" id="searchButton">Pesquisar</button>
         </div>
         <div class="container__pesquisa-atributo">
-            <select class="search-option" id="attributeFilter">
+            <select class="search-option-select" id="attributeFilter">
                 <option value="">Selecione um atributo</option>
                 <option value="earth">Terra</option>
                 <option value="water">Água</option>
@@ -27,7 +28,7 @@
             <button class="button-search" id="filterByAttribute">Filtrar por Atributo</button>
         </div>
         <div class="container__pesquisa-nivel">
-            <select id="search__level-filter" class="search-option" id="levelFilter">
+            <select class="search-option-select search__level-filter" id="levelFilter">
                 <option value="">Selecione um Nível</option>
                 <option value="1">01</option>
                 <option value="2">02</option>
@@ -49,6 +50,6 @@
     <section class="container__cards">
         <div class="cards-view" id="cardList"></div>
     </section>
-    <script src="script.js"></script>
+
 </body>
 </html>
