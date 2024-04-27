@@ -10,11 +10,11 @@
     <h1>Lista de Cartas Yu-Gi-Oh</h1>
     <section class="container__pesquisa">
         <div class="container__pesquisa-nome">
-            <input type="text" id="searchInput" placeholder="Pesquisar cartas...">
-            <button id="searchButton">Pesquisar</button>
+            <input class="search-option" type="search" id="searchInput" placeholder="Pesquisar cartas...">
+            <button class="button-search" id="searchButton">Pesquisar</button>
         </div>
         <div class="container__pesquisa-atributo">
-            <select id="attributeFilter">
+            <select class="search-option" id="attributeFilter">
                 <option value="">Selecione um atributo</option>
                 <option value="earth">Terra</option>
                 <option value="water">Água</option>
@@ -24,10 +24,10 @@
                 <option value="dark">Trevas</option>
                 <option value="divine">Divino</option>
             </select>
-            <button id="filterByAttribute">Filtrar por Atributo</button>
+            <button class="button-search" id="filterByAttribute">Filtrar por Atributo</button>
         </div>
         <div class="container__pesquisa-nivel">
-            <select id="levelFilter">
+            <select id="search__level-filter" class="search-option" id="levelFilter">
                 <option value="">Selecione um Nível</option>
                 <option value="1">01</option>
                 <option value="2">02</option>
@@ -42,7 +42,7 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
             </select>
-            <button id="filterByLevel">Filtrar por Nível</button>
+            <button class="button-search" id="filterByLevel">Filtrar por Nível</button>
 
         </div>
     </section>
